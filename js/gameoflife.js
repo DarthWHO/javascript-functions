@@ -23,7 +23,7 @@ const printCell = (cell, state) => {
 
 const corners = (state = []) => {
 
-  if (state === []) {
+  if (state.length === 0) {
     return { topRight: [0,0], bottomLeft: [0,0] }
   }
   else {
@@ -34,8 +34,8 @@ const corners = (state = []) => {
       rightNumbers.push(state[cell][1]);
     }
     return { 
-      topRight: [Math.max.apply(Math, leftNumbers), Math.max.apply(Math, rightNumbers)], 
-      bottomLeft: [Math.min.apply(Math, leftNumbers), Math.min.apply(Math, rightNumbers)] }
+      topRight: [Math.max.apply(Math, leftNumbers),Math.max.apply(Math, rightNumbers)], 
+      bottomLeft: [Math.min.apply(Math, leftNumbers),Math.min.apply(Math, rightNumbers)] }
   }
 
 };

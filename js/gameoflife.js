@@ -8,7 +8,14 @@ function same([x, y], [j, k]) {
 }
 
 // The game state to search for `cell` is passed as the `this` value of the function.
-function contains(cell) {}
+function contains(cell) {
+  let cellExists = false;
+  for (thisCell in this) {
+    if (same(cell, thisCell) ) {
+      return true;
+    }
+  }
+}
 
 const printCell = (cell, state) => {};
 

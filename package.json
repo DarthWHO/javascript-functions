@@ -12,9 +12,9 @@
     "chai": "^4.2.0",
     "cheerio": "^1.0.0-rc.3",
     "cross-env": "^5.2.0",
-    "dot-object": "^1.9.0",
+    "dot-object": "^2.1.4",
     "esprima": "^4.0.1",
     "jscodeshift": "^0.6.4",
-    "mocha": "^6.2.0"
+    "mocha": "^10.1.0"
   }
 }

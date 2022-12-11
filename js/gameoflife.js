@@ -33,7 +33,7 @@ const corners = (state = []) => {
       leftNumbers.push(cell[0]);
       rightNumbers.push(cell[1]);
     }
-    return {topRight: [Math.max(leftNumbers),Math.max(rightNumbers)], bottomLeft: [Math.min(leftNumbers),Math.max(rightNumbers)]}
+    return {topRight: [Math.max(leftNumbers),Math.max(rightNumbers)], bottomLeft: [Math.min(leftNumbers),Math.min(rightNumbers)]}
   }
   
 };

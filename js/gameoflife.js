@@ -12,7 +12,14 @@ function contains(cell) {
   return this.some((thisCell) => same(thisCell, cell));
 }
 
-const printCell = (cell, state) => {};
+const printCell = (cell, state) => {
+  if (contains.call(state, cell)) {
+    return '\u25A3'
+  }
+  else {
+    return '\u25A2'
+  }
+};
 
 const corners = (state = []) => {};
 

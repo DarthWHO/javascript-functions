@@ -24,7 +24,7 @@ const printCell = (cell, state) => {
 const corners = (state = []) => {
 
   if (state === []) {
-    return { topRight: [0, 0], bottomLeft: [0, 0] }
+    return { topRight: [0,0], bottomLeft: [0,0] }
   }
   else {
     let leftNumbers = [];

@@ -21,7 +21,22 @@ const printCell = (cell, state) => {
   }
 };
 
-const corners = (state = []) => {};
+const corners = (state = []) => {
+
+  if (state === []) {
+    return {topRight: [0,0], bottomLeft: [0,0]}
+  }
+  else {
+    let leftNumbers = [];
+    let rightNumbers = [];
+    for (let cell in state){
+      leftNumbers.push(cell[0]);
+      rightNumbers.push(cell[1]);
+    }
+    return {topRight: [Math.max(leftNumbers),Math.max(rightNumbers)], bottomLeft: [Math.min(leftNumbers),Math.max(rightNumbers)]}
+  }
+  
+};
 
 const printCells = (state) => {};
 
